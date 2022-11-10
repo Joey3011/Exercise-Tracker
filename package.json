@@ -2,7 +2,7 @@
   "name": "exercise-tracker",
   "version": "0.1.0",
   "main": "server.js",
-  "descriptio" : "FreeCodeCamp Exercise Tracker",
+  "description" : "FreeCodeCamp Exercise Tracker",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -11,6 +11,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
+  },
+  "reository":{
+    "url" : "https://github.com/Joey3011/Exercise-Tracker.git"
   },
   "scripts": {
     "start": "node server",

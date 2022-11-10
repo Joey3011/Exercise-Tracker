@@ -39,6 +39,7 @@ app.post('/api/users', (req, res) => {
                     if(err){
                         console.log(err)
                     } else{
+                        console.log("User info save successfuly")
                         res.json({
                             "_id": data.id,
                             "username": data.username
@@ -82,7 +83,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
                 if(err){
                     console.log(err)
                 }else{
-                    console.log("exercise input save successfuly")
+                    console.log("exercise info save successfuly")
                     res.json({
                         "_id": idToCHeck,
                         "username": data.username,
@@ -150,7 +151,7 @@ app.post('/api/users/:_id/exercises', (req, res) => {
                             if(err){
                                 console.log(err)
                             }else{
-                                console.log("Log save successfully")
+                                console.log("Log info save successfully")
                                 res.json({
                                     "_id": idToCHeck,
                                     "username": data.username,
