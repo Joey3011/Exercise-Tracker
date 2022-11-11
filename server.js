@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const userInfo = require('./model/user')
 const exerciseInfo = require('./model/exercise')
 let bodyParser = require('body-parser')
-const PORT = process.env.PORT || 3500
+const PORT = process.env.PORT || 3000
 
 connectDB()
 
