@@ -1,10 +1,24 @@
 const mongoose = require('mongoose')
 
 const exerciseSchema = new mongoose.Schema({
-    "username": String,
-    "description": String,
-    "duration": Number,
-    "date": Date
+    username: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    duration: {
+        type: Number,
+        required: true
+    },
+    date: {
+        type: Date
+    }
+},
+{
+    versionKey: false
 })
 
 let exercise = mongoose.model('exerciseInfo', exerciseSchema)
