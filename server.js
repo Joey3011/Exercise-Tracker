@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const userInfo = require('./model/user')
 const exerciseInfo = require('./model/exercise')
 let bodyParser = require('body-parser')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3500
 
 connectDB()
 
@@ -23,7 +23,8 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 app.use('/', require('./routes/root'))
 
 //username | user info
-app.post('/api/users', (req, res) => {
+app.post('/api/users', (err, req, res) => {
+ 
     userInfo.find({ "username": req.body.username}, (err, userData) => {
         if(err){
           console.log(err)
