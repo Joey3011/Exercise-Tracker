@@ -25,7 +25,7 @@ app.use('/', require('./routes/root'))
 //username | user info
 app.post('/api/users', (req, res) => {
     let userQuery = { "username": req.body.username}
-    userInfo.find(userQuery, (err, userData) => {
+    userInfo.find((userQuery), (err, userData) => {
         if(err){
           console.log("Error: ", err)
         } else {
